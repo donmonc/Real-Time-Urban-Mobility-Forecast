@@ -3,9 +3,6 @@ import os
 
 from src.paths import PARENT_DIR
 
-# Load key-value pairs from .env file located in the parent directory
-load_dotenv(PARENT_DIR/'.env')
-
 try:
     WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
 except:
