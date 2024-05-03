@@ -11,16 +11,16 @@ import src.config as config
 
 
 current_date = pd.to_datetime(datetime.now(), utc=True).floor('h')
-current_date
+print(current_date)
 
 
 # Load Rides & Weather Data From Hopsworks Feature Store
 
 rides = load_batch_of_rides_features_from_store(current_date)
-rides.head()
+#rides.head()
 
 weather = load_batch_of_weather_features_from_store(current_date)
-weather.head() 
+#weather.head() 
 
 #Create A Spatio-Temporal Dataset & Prepare Data For Prediction 
 X_test = prepare_spatio_temporal_data_for_prediction(rides, weather)
@@ -31,6 +31,8 @@ X_test = prepare_spatio_temporal_data_for_prediction(rides, weather)
 model = load_model(source='local')
 predictions_df = get_model_prediction(model, X_test)
 predictions_df['pickup_hour'] = current_date
+
+print(predictions_df[:5])
 
 
 # Save Predictions In Feature Store, So They Can Be Consumed By Web App Later
