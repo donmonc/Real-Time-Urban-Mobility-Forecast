@@ -17,7 +17,7 @@ from src.data import fetch_ride_events_from_data_warehouse, fetch_batch_raw_ride
 
 rides = fetch_batch_raw_ride_data(from_date=fetch_data_from, to_date=fetch_data_to)
 ts_data = transform_raw_data_into_ts_data(rides)
-
+print(ts_data.head())
 
 # Connect to the project
 project = hopsworks.login(project = config.HOPSWORKS_PROJECT_NAME, 
