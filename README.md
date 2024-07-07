@@ -14,7 +14,7 @@ To answer these research questions, I employed two machine learning models:
 >   Our first model is designed to anticipate taxi ride demand data for the upcoming hour, drawing on historical data. 
 
 > - **Model 2**: Dynamic Pricing Model
->   The second model is built on the foundation of dynamic pricing, a strategy crucial for real-time adjusting of prices based on various factors, including demand. This model doesn't operate in isolation; it ingests the predicted demand from Model 1, integrating it with spatio-temporal features that include both ride data and weather data.
+>   The second model is built on the foundation of dynamic pricing, a strategy crucial for real-time price adjustments based on various factors, including demand. This model doesn't operate in isolation; it ingests the predicted demand from Model 1, integrating it with spatio-temporal features that include both ride data and weather data.
  
 ### <u>System Architecture for Real-Time Urban Mobility Demand Forecasting</u>
 
