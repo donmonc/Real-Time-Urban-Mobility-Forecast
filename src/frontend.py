@@ -24,7 +24,7 @@ current_date_str = str(current_date.strftime('%Y-%m-%d %H:%M'))
 st.title(f'NYC Taxi Demand Prediction 🚖')
 
 # Create the header with HTML
-dev = "Made by Princewill. Let's connect 🤝"
+dev = "Made by Emeka. Let's connect 🤝"
 
 # Social Media Handles
 twitter = "https://twitter.com/itsdonmonc"
